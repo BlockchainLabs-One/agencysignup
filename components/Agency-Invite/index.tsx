@@ -120,8 +120,8 @@ function AgencyInviteSignup() {
         }).json()
 
         if (res.success) {
-          toast.success("Signup successful");
-          router.push("/auth/login/busines");
+          toast.success("Signup successful with Agency Invite");
+          window.location.href = "https://nft-world.one/auth/login/busines";
         } else {
           toastError(res.message);
         }
