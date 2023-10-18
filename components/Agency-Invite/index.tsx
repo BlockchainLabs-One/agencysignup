@@ -107,7 +107,7 @@ function AgencyInviteSignup() {
   const handleSignup = async () => {
     if (validate() && acceptTerms) {
       try {
-        const res: any = await APIClient.post('auth/agency-invite-brand-register-by-subdomain', {
+        const res: any = await APIClient.post('auth/agency-invite-register-by-subdomain', {
           json: {
             username: username,
             email: email,
